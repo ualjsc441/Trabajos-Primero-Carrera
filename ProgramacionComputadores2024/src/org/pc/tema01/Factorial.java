@@ -28,9 +28,12 @@ public class Factorial {
 	}
 	// Método que produce un desbordamiento de la pila por ejecutarse indefinidamente. StackOverflowError
 
-	public static long factorialDesbordado(int n){
-		return n * factorialDesbordado(n-1);
-		}
+	
+	  public static long factorialDesbordado(int n) {
+	   return n * factorialDesbordado(n - 1); 
+	   }
+	 
+	 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -38,17 +41,17 @@ public class Factorial {
 		int m = 5;
 		int p = 7;
 		
-		long  f =factorialRecursivo(n);
+		
 		// Muestra el factorial de n utilizando el método recursivo
 		System.out.println("El factorial de " + n + " es "
 				+ factorialRecursivo(n));
 
-		/*// Muestra el factorial de m utilizando el método iterativo
+		// Muestra el factorial de m utilizando el método iterativo
 		System.out.println("El factorial de " + m + " es "
-				+ factorialIterativo(m));*/
+				+ factorialIterativo(m));
 
-		/*//Desbordamiento
+		//Desbordamiento
 		System.out.println("El factorial de " + p + " es "
-				+ factorialDesbordado(p));*/
+				+ factorialDesbordado(p));
 	}
 }
